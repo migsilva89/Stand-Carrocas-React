@@ -3,19 +3,27 @@ import { Link } from 'react-router-dom'
 
 function NavBar() {
   return (
-    <nav className="h-10">
-      <ul className="flex gap-4 p-2 px-4 bg-black text-white">
+    <nav className='py-8 px-12 font-medium text-md'>
+      <ul className="text-gray-400 flex items-center justify-between">
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/">
+            <img src="/fullLogo.png" alt="" className="w-40" />
+          </Link>
         </li>
-        <li>
-          <Link to="/about">About</Link>
-        </li>
-        <li>
-          <Link to="/cars-list">Cars List</Link>
-        </li>
-        <li>
-          <Link to="/contacts">Contacts</Link>
+        <ul className="flex justify-evenly w-1/2">
+          <li className='hover:text-gray-600'>
+            <Link to="/">Home</Link>
+          </li>
+          <li className='hover:text-gray-600'>
+            <Link to="/about">Sobre</Link>
+          </li>
+          <li className='hover:text-gray-600'>
+            <Link to="/contacts">Contactos</Link>
+          </li>
+        </ul>
+
+        <li className="bg-blue-500 text-white py-3 px-5 hover:bg-blue-400">
+          <Link to="/cars-list">Catalogo</Link>
         </li>
       </ul>
     </nav>
