@@ -4,7 +4,7 @@ import Footer from '../components/Footer'
 
 function MainLayout(props) {
   return (
-    <main className="font-oswald ">
+    <main className="font-oswald">
       <NavBar />
       {props.children}
       <Footer />
