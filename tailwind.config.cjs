@@ -9,7 +9,8 @@ module.exports = {
         'oswald':['Oswald', 'sans-serif']
       },
       backgroundImage: {
-        'hero-about': "url('/public/bannerAbout.jpeg')"
+        'hero-about': "url('/bannerAbout.jpeg')",
+        'hero-contact': "url('/insideContacts.jpg')"
       }
     },
   },

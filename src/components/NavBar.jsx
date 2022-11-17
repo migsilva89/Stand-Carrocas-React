@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom'
 import { pulse } from 'react-animations'
 import styled, { keyframes } from 'styled-components'
 
+const Pulse = styled.div`
+  animation: 1s ${keyframes`${pulse}`} infinite;
+`
 function NavBar() {
-  const Pulse = styled.div`
-    animation: 1s ${keyframes`${pulse}`} infinite;
-  `
 
   return (
     <nav className="py-8 px-12 font-medium text-md  max-w-7xl mx-auto">
@@ -28,9 +28,9 @@ function NavBar() {
           </li>
         </ul>
         <Pulse>
-          <li className="bg-blue-500 text-white py-3 px-10 hover:bg-blue-400 cursor-pointer">
-            <Link to="/cars-list">FIND YOUR CAR</Link>
-          </li>
+          <Link  to="/cars-list" className="bg-blue-500 text-white py-3 px-10 hover:bg-blue-400 cursor-pointer">
+            <a>FIND YOUR CAR</a>
+          </Link >
         </Pulse>
       </ul>
     </nav>
