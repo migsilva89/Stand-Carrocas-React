@@ -3,11 +3,12 @@
 @tailwind utilities;
 
 .map-container {
-  width: 50%;
-  height: 50vh;
-}
-
-.combobox-input {
-  width: 100%;
-  padding: 0.5rem;
-}
+    width: 50%;
+    height: 50vh;
+  }
+  
+  .combobox-input {
+    width: 100%;
+    padding: 0.5rem;
+  }
+  
