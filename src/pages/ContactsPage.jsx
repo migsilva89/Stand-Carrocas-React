@@ -1,7 +1,8 @@
 import React, { useMemo } from 'react'
 import MainLayout from '../layouts/MainLayout'
-import { GoogleMap, useLoadScript, Marker } from '@react-google-maps/api'
+import { useLoadScript } from '@react-google-maps/api'
 import Map from '../components/Map'
+import ContactForm from '../components/ContactForm'
 
 function ContactsPage() {
   const { isLoaded } = useLoadScript({
@@ -12,7 +13,14 @@ function ContactsPage() {
 
   return (
     <MainLayout>
-      <Map></Map>
+      <section className="max-w-7xl mx-auto px-12 my-20 grid grid-cols-2">
+        <div className="flex justify-start">
+          <Map></Map>
+        </div>
+        <div>
+         <ContactForm/>
+        </div>
+      </section>
     </MainLayout>
   )
 }

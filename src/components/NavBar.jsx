@@ -29,7 +29,7 @@ function NavBar() {
         </ul>
         <Pulse>
           <li className="bg-blue-500 text-white py-3 px-10 hover:bg-blue-400 cursor-pointer">
-            <Link to="/cars-list">Catalog</Link>
+            <Link to="/cars-list">FIND YOUR CAR</Link>
           </li>
         </Pulse>
       </ul>

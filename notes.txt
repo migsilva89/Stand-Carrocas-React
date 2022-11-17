@@ -1,2 +1,4 @@
--favicon
+- favicon
 - possivel receber imagem das marcas? 
+- analisar o marker da google maps API - DONE
+- Animations to all pages??
