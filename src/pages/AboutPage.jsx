@@ -4,7 +4,13 @@ import MainLayout from '../layouts/MainLayout'
 function AboutPage() {
   return (
     <MainLayout>
-      <div className="bg-yellow-700">About</div>
+      <header className="relative bg-hero-about h-96 bg-cover">
+        <div className='bg-blue-500 h-full bg-opacity-25'>
+          <div className="flex justify-between max-w-7xl mx-auto">
+            
+          </div>
+        </div>
+      </header>
     </MainLayout>
   )
 }

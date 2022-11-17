@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function NavBar() {
   return (
-    <nav className='py-8 px-12 font-medium text-md  max-w-7xl mx-auto'>
+    <nav className="py-8 px-12 font-medium text-md  max-w-7xl mx-auto">
       <ul className="text-gray-400 flex items-center justify-between">
         <li>
           <Link to="/">
@@ -11,13 +11,13 @@ function NavBar() {
           </Link>
         </li>
         <ul className="flex justify-evenly w-1/2">
-          <li className='hover:text-gray-600'>
+          <li className="hover:text-gray-600">
             <Link to="/">Home</Link>
           </li>
-          <li className='hover:text-gray-600'>
+          <li className="hover:text-gray-600">
             <Link to="/about">About</Link>
           </li>
-          <li className='hover:text-gray-600'>
+          <li className="hover:text-gray-600">
             <Link to="/contacts">Contacts</Link>
           </li>
         </ul>

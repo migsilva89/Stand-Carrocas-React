@@ -2,19 +2,19 @@ import React from 'react'
 
 function Footer() {
   return (
-    <footer class="bg-sky-50 px-6 lg:px-0 ">
-      <div class="max-w-7xl mx-auto px-12 grid md:grid-cols-6 py-20  text-center md:text-start">
-        <div class="md:col-span-2 pt-2 flex justify-center md:justify-start pb-8 md:pb-0">
+    <footer className="bg-sky-50 px-6 lg:px-0 ">
+      <div className="max-w-7xl mx-auto px-12 grid md:grid-cols-6 py-20  text-center md:text-start">
+        <div className="md:col-span-2 pt-2 flex justify-center md:justify-start pb-8 md:pb-0">
           <img src="/fullLogo.png" alt="" className="w-46 h-20" />
         </div>
         <div>
-          <h4 class="font-bold pb-5 text-blue-500 text-lg">Features</h4>
-          <div class="text-grayy text-sm">
+          <h4 className="font-bold pb-5 text-blue-500 text-lg">Features</h4>
+          <div className="text-grayy text-sm">
             <p>
               <a
                 href="#"
                 aria-label="Link Shortening"
-                class="hover:text-blue-500 text-gray-400"
+                className="hover:text-blue-500 text-gray-400"
               >
                 Link Shortening
               </a>
@@ -23,7 +23,7 @@ function Footer() {
               <a
                 href="#"
                 aria-label="Branded Links"
-                class="hover:text-blue-500 text-gray-400"
+                className="hover:text-blue-500 text-gray-400"
               >
                 Branded Links
               </a>
@@ -32,7 +32,7 @@ function Footer() {
               <a
                 href="#"
                 aria-label="Analytics"
-                class="hover:text-blue-500 text-gray-400"
+                className="hover:text-blue-500 text-gray-400"
               >
                 Analytics
               </a>
@@ -40,13 +40,13 @@ function Footer() {
           </div>
         </div>
         <div>
-          <h4 class="font-bold pb-5 text-blue-500 text-lg">Resources</h4>
-          <div class="text-grayy text-sm">
+          <h4 className="font-bold pb-5 text-blue-500 text-lg">Resources</h4>
+          <div className="text-grayy text-sm">
             <p>
               <a
                 href="#"
                 aria-label="Blog"
-                class="hover:text-blue-500 text-gray-400"
+                className="hover:text-blue-500 text-gray-400"
               >
                 Blog
               </a>
@@ -55,7 +55,7 @@ function Footer() {
               <a
                 href="#"
                 aria-label="Developers"
-                class="hover:text-blue-500 text-gray-400"
+                className="hover:text-blue-500 text-gray-400"
               >
                 Developers
               </a>
@@ -64,7 +64,7 @@ function Footer() {
               <a
                 href="#"
                 aria-label="Support"
-                class="hover:text-blue-500 text-gray-400"
+                className="hover:text-blue-500 text-gray-400"
               >
                 Support
               </a>
@@ -72,13 +72,13 @@ function Footer() {
           </div>
         </div>
         <div>
-          <h4 class="font-bold pb-5 text-blue-500 text-lg">Company</h4>
-          <div class="text-grayy text-sm">
+          <h4 className="font-bold pb-5 text-blue-500 text-lg">Company</h4>
+          <div className="text-grayy text-sm">
             <p>
               <a
                 href="#"
                 aria-label="About"
-                class="hover:text-blue-500 text-gray-400"
+                className="hover:text-blue-500 text-gray-400"
               >
                 About
               </a>
@@ -87,7 +87,7 @@ function Footer() {
               <a
                 href="#"
                 aria-label="Our Team"
-                class="hover:text-blue-500 text-gray-400"
+                className="hover:text-blue-500 text-gray-400"
               >
                 Our Team
               </a>
@@ -96,7 +96,7 @@ function Footer() {
               <a
                 href="#"
                 aria-label="Careers"
-                class="hover:text-blue-500 text-gray-400"
+                className="hover:text-blue-500 text-gray-400"
               >
                 Careers
               </a>
@@ -105,18 +105,18 @@ function Footer() {
               <a
                 href="#"
                 aria-label="Contact"
-                class="hover:text-blue-500 text-gray-400"
+                className="hover:text-blue-500 text-gray-400"
               >
                 Contact
               </a>
             </p>
           </div>
         </div>
-        <div class="pt-2">
-          <div class="flex md:justify-between justify-center gap-5 md:gap-0 mt-8 md:mt-0">
+        <div className="pt-2">
+          <div className="flex md:justify-between justify-center gap-5 md:gap-0 mt-8 md:mt-0">
             <a href="#" aria-label="links">
               <svg
-                class="hover:fill-blue-400 fill-blue-500"
+                className="hover:fill-blue-400 fill-blue-500"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -126,7 +126,7 @@ function Footer() {
             </a>
             <a href="#" aria-label="links">
               <svg
-                class="hover:fill-blue-400 fill-blue-500"
+                className="hover:fill-blue-400 fill-blue-500"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="20"
@@ -136,7 +136,7 @@ function Footer() {
             </a>
             <a href="#" aria-label="links">
               <svg
-                class="hover:fill-blue-400 fill-blue-500"
+                className="hover:fill-blue-400 fill-blue-500"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -146,7 +146,7 @@ function Footer() {
             </a>
             <a href="#" aria-label="links">
               <svg
-                class="hover:fill-blue-400 fill-blue-500"
+                className="hover:fill-blue-400 fill-blue-500"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"

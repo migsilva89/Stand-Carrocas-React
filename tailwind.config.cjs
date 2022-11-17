@@ -7,6 +7,9 @@ module.exports = {
     extend: {
       fontFamily: {
         'oswald':['Oswald', 'sans-serif']
+      },
+      backgroundImage: {
+        'hero-about': "url('/public/bannerAbout.jpeg')"
       }
     },
   },

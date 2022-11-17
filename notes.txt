@@ -1,2 +1,2 @@
 -favicon
-
+- possivel receber imagem das marcas? 
