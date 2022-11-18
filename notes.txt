@@ -2,3 +2,6 @@
 - possivel receber imagem das marcas? 
 - analisar o marker da google maps API - DONE
 - Animations to all pages??
+- Simbol horse for car details 
+- no border Radius when slide is working 
+- Submit form (COMPONENT WITH MESSAGE: message sent?!)

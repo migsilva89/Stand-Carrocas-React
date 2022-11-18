@@ -1,14 +1,18 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import MainLayout from '../layouts/MainLayout'
+import data from '../data/data.json'
+import SingleCarComponent from '../components/SingleCarComponent'
 
 function SingleCarPage() {
   const params = useParams()
-  const slug = params.slug
-
+  const id = params.slug
+  const car = data[id - 1]
+  
+  console.log(car)
   return (
     <MainLayout>
-      <div>{slug}</div>
+      <SingleCarComponent car={car}/>
     </MainLayout>
   )
 }

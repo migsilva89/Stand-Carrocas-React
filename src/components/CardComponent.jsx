@@ -23,15 +23,15 @@ function CardComponent(props) {
           </button>
         </div>
         <div className="flex gap-5 text-gray-400 text-xs pt-3  tracking-wider">
-          <p>Fuel</p>
+          <p>{props.fuel}</p>
           <img src="/dot.png" alt="" className="w-4 h-4" />
-          <p>4 Seats</p>
+          <p>{props.doors} Doors</p>
         </div>
         <div className="flex items-center justify-between mt-5">
           <h3 className="text-xl font-semibold text-blue-500 tracking-widest">
-            ${props.price}
+          € {props.price}
           </h3>
-          <Link to={`/cars/${props.carName}`}>
+          <Link to={`/cars/${props.id}`}>
             <button className="bg-blue-500 hover:scale-125 transition duration-750 text-white py-2 px-6 hover:bg-blue-400 cursor-pointer">
               Details
             </button>

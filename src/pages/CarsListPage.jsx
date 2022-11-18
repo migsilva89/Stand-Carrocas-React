@@ -4,8 +4,6 @@ import MainLayout from '../layouts/MainLayout'
 import data from '../data/data.json'
 
 function CarsListPage() {
-  console.log(data)
-
   return (
     <MainLayout>
       <section className="max-w-7xl mx-auto px-12 pb-10 grid grid-cols-4 gap-7">
@@ -17,6 +15,8 @@ function CarsListPage() {
             year={car.anofabrico}
             price={car.preco}
             id={index + 1}
+            fuel={car.combustivel}
+            doors={car.portas}
           />
         ))}
       </section>
