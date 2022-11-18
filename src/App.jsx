@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
 import CarsListPage from './pages/CarsListPage'
 import ContactsPage from './pages/ContactsPage'
+import SingleCarPage from './pages/SingleCarPage'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/about" element={<AboutPage/>} />
         <Route path="/cars-list" element={<CarsListPage/>} />
         <Route path="/contacts" element={<ContactsPage/>} />
+        <Route path="/cars/:slug" element={<SingleCarPage/>} />
       </Routes>
     </BrowserRouter>
   )

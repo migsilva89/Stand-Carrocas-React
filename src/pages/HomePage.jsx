@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import MainLayout from '../layouts/MainLayout'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import CardComponent from '../components/CardComponent'
 
 function HomePage() {
   useEffect(() => {
@@ -53,6 +54,9 @@ function HomePage() {
           <button className="bg-blue-500 text-white py-3 px-8 hover:bg-blue-400 transition duration-750 hover:scale-125">
             FIND THE PERFECT CAR FOR YOU
           </button>
+        </div>
+        <div className="max-w-7xl mx-auto pb-10 grid grid-cols-4 gap-7">
+ 
         </div>
       </section>
     </MainLayout>

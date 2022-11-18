@@ -7,7 +7,6 @@ const Pulse = styled.div`
   animation: 1s ${keyframes`${pulse}`} infinite;
 `
 function NavBar() {
-
   return (
     <nav className="py-8 px-12 font-medium text-md  max-w-7xl mx-auto">
       <ul className="text-gray-400 flex items-center justify-between">
@@ -28,9 +27,12 @@ function NavBar() {
           </li>
         </ul>
         <Pulse>
-          <Link  to="/cars-list" className="bg-blue-500 text-white py-3 px-10 hover:bg-blue-400 cursor-pointer">
-            <a>FIND YOUR CAR</a>
-          </Link >
+          <Link
+            to="/cars-list"
+            className="bg-blue-500 text-white py-3 px-10 hover:bg-blue-400 cursor-pointer"
+          >
+            <button>FIND YOUR CAR</button>
+          </Link>
         </Pulse>
       </ul>
     </nav>

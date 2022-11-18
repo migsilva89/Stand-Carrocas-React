@@ -3,7 +3,8 @@
     "marca": "Lamborghini",
     "imagemmarca": "https://media.gettyimages.com/id/94938694/pt/foto/a-visitor-looks-at-a-lamborghini-gallardo-lp-560-4-spyder-automobile-at-volkswagen-ags-annual.jpg?s=612x612&w=0&k=20&c=leZvzt5jcA8S9W9tcZGxgsEdwVsWJH5CTU1EQpF9rMk=",
     "modelo": "Gallard LP 560-4",
-    "tipodechassi":"Coupe",
+    "preco": 25000,
+    "tipodechassi": "Coupe",
     "estado": "usado",
     "anofabrico": "2009",
     "numerokm": 62000,
@@ -15,6 +16,93 @@
     "portas": 2,
     "imagens": [
       "https://media.gettyimages.com/id/94938694/pt/foto/a-visitor-looks-at-a-lamborghini-gallardo-lp-560-4-spyder-automobile-at-volkswagen-ags-annual.jpg?s=612x612&w=0&k=20&c=leZvzt5jcA8S9W9tcZGxgsEdwVsWJH5CTU1EQpF9rMk=",
+      "https://media.gettyimages.com/id/85134843/pt/foto/the-lamborghini-gallardo-lp560-4-spyder-is-displayed-during-the-melbourne-international-motor.jpg?s=612x612&w=0&k=20&c=G3vfIytBgPZSIkEASRNlKSaog-igDN8XLpJg3S6zdDc=",
+      "https://quatrorodas.abril.com.br/wp-content/uploads/2016/11/110823-gallardo02.jpeg?quality=70&strip=info&w=928&w=636"
+    ],
+    "sensores": "n/a",
+    "seguranca": [
+      "ABS",
+      "Airbag do passageiro",
+      "Controlo de estabilidade (ESP)",
+      "Airbag do condutor"
+    ],
+    "tipofarois": "No Info"
+  },
+  {
+    "marca": "Ferrari",
+    "imagemmarca": "https://media.gettyimages.com/id/94938694/pt/foto/a-visitor-looks-at-a-lamborghini-gallardo-lp-560-4-spyder-automobile-at-volkswagen-ags-annual.jpg?s=612x612&w=0&k=20&c=leZvzt5jcA8S9W9tcZGxgsEdwVsWJH5CTU1EQpF9rMk=",
+    "modelo": "Gallard LP 560-4",
+    "preco": 27200,
+    "tipodechassi": "Coupe",
+    "estado": "usado",
+    "anofabrico": "2012",
+    "numerokm": 62000,
+    "potencia": "560cv",
+    "capacidade": 5204,
+    "combustivel": "Gasolina",
+    "cor exterior": "Branco",
+    "tranmissao": "Automatica",
+    "portas": 2,
+    "imagens": [
+      "https://media.gettyimages.com/id/85134843/pt/foto/the-lamborghini-gallardo-lp560-4-spyder-is-displayed-during-the-melbourne-international-motor.jpg?s=612x612&w=0&k=20&c=G3vfIytBgPZSIkEASRNlKSaog-igDN8XLpJg3S6zdDc=",
+      "https://media.gettyimages.com/id/85134843/pt/foto/the-lamborghini-gallardo-lp560-4-spyder-is-displayed-during-the-melbourne-international-motor.jpg?s=612x612&w=0&k=20&c=G3vfIytBgPZSIkEASRNlKSaog-igDN8XLpJg3S6zdDc=",
+      "https://quatrorodas.abril.com.br/wp-content/uploads/2016/11/110823-gallardo02.jpeg?quality=70&strip=info&w=928&w=636"
+    ],
+    "sensores": "n/a",
+    "seguranca": [
+      "ABS",
+      "Airbag do passageiro",
+      "Controlo de estabilidade (ESP)",
+      "Airbag do condutor"
+    ],
+    "tipofarois": "No Info"
+  },
+  {
+    "marca": "Ferrari",
+    "imagemmarca": "https://media.gettyimages.com/id/94938694/pt/foto/a-visitor-looks-at-a-lamborghini-gallardo-lp-560-4-spyder-automobile-at-volkswagen-ags-annual.jpg?s=612x612&w=0&k=20&c=leZvzt5jcA8S9W9tcZGxgsEdwVsWJH5CTU1EQpF9rMk=",
+    "modelo": "Gallard LP 560-4",
+    "preco": 27200,
+    "tipodechassi": "Coupe",
+    "estado": "usado",
+    "anofabrico": "2012",
+    "numerokm": 62000,
+    "potencia": "560cv",
+    "capacidade": 5204,
+    "combustivel": "Gasolina",
+    "cor exterior": "Branco",
+    "tranmissao": "Automatica",
+    "portas": 2,
+    "imagens": [
+      "https://media.gettyimages.com/id/85134843/pt/foto/the-lamborghini-gallardo-lp560-4-spyder-is-displayed-during-the-melbourne-international-motor.jpg?s=612x612&w=0&k=20&c=G3vfIytBgPZSIkEASRNlKSaog-igDN8XLpJg3S6zdDc=",
+      "https://media.gettyimages.com/id/85134843/pt/foto/the-lamborghini-gallardo-lp560-4-spyder-is-displayed-during-the-melbourne-international-motor.jpg?s=612x612&w=0&k=20&c=G3vfIytBgPZSIkEASRNlKSaog-igDN8XLpJg3S6zdDc=",
+      "https://quatrorodas.abril.com.br/wp-content/uploads/2016/11/110823-gallardo02.jpeg?quality=70&strip=info&w=928&w=636"
+    ],
+    "sensores": "n/a",
+    "seguranca": [
+      "ABS",
+      "Airbag do passageiro",
+      "Controlo de estabilidade (ESP)",
+      "Airbag do condutor"
+    ],
+    "tipofarois": "No Info"
+  },
+  {
+    "marca": "Ferrari",
+    "imagemmarca": "https://media.gettyimages.com/id/94938694/pt/foto/a-visitor-looks-at-a-lamborghini-gallardo-lp-560-4-spyder-automobile-at-volkswagen-ags-annual.jpg?s=612x612&w=0&k=20&c=leZvzt5jcA8S9W9tcZGxgsEdwVsWJH5CTU1EQpF9rMk=",
+    "modelo": "Gallard LP 560-4",
+    "preco": 27200,
+    "tipodechassi": "Coupe",
+    "estado": "usado",
+    "anofabrico": "2012",
+    "numerokm": 62000,
+    "potencia": "560cv",
+    "capacidade": 5204,
+    "combustivel": "Gasolina",
+    "cor exterior": "Branco",
+    "tranmissao": "Automatica",
+    "portas": 2,
+    "imagens": [
+      "https://media.gettyimages.com/id/85134843/pt/foto/the-lamborghini-gallardo-lp560-4-spyder-is-displayed-during-the-melbourne-international-motor.jpg?s=612x612&w=0&k=20&c=G3vfIytBgPZSIkEASRNlKSaog-igDN8XLpJg3S6zdDc=",
       "https://media.gettyimages.com/id/85134843/pt/foto/the-lamborghini-gallardo-lp560-4-spyder-is-displayed-during-the-melbourne-international-motor.jpg?s=612x612&w=0&k=20&c=G3vfIytBgPZSIkEASRNlKSaog-igDN8XLpJg3S6zdDc=",
       "https://quatrorodas.abril.com.br/wp-content/uploads/2016/11/110823-gallardo02.jpeg?quality=70&strip=info&w=928&w=636"
     ],

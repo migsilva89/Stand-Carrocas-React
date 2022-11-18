@@ -2,8 +2,8 @@ import React from 'react'
 
 function ContactForm() {
   return (
-    <form className='px-10 space-y-7'>
-      <h2 className='text-blue-900 text-3xl font-bold'>Contact us</h2>
+    <form className="px-10 space-y-7">
+      <h2 className="text-blue-900 text-3xl font-bold">Contact us</h2>
       <div>
         <input
           placeholder="Insert your name"
@@ -18,7 +18,6 @@ function ContactForm() {
           type="email"
         />
       </div>
-
       <div>
         <textarea
           placeholder="Insert your message"
@@ -27,8 +26,12 @@ function ContactForm() {
         />
       </div>
       <div>
-
-      <button className='bg-blue-500 text-white py-3 px-10 hover:bg-blue-400 cursor-pointer' type="sumbit">Send</button>
+        <button
+          className="bg-blue-500 text-white py-3 px-10 hover:bg-blue-400 cursor-pointer"
+          type="sumbit"
+        >
+          Send
+        </button>
       </div>
     </form>
   )
