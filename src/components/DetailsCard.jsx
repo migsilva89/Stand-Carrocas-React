@@ -2,7 +2,7 @@ import React from 'react'
 
 function DetailsCard(props) {
   return (
-    <ul className="bg-white rounded-xl p-10 shadow-lg">
+    <ul className="space-y-12">
       <div className="flex items-center justify-between">
         <div className="text-blue-900">
           <h1 className="text-5xl font-bold">{props.car.marca} </h1>
@@ -14,7 +14,7 @@ function DetailsCard(props) {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-2 items-center mt-5 text-blue-600 font-medium">
+      <div className="grid grid-cols-2 items-center pt-4 text-blue-600 font-medium">
         <li className="flex gap-5 pb-2">
           <div>
             <svg
@@ -130,7 +130,7 @@ function DetailsCard(props) {
           <h1>{props.car.corexterior}</h1>
         </li>
       </div>
-      <div className="mt-5 bg-blue-500 text-white px-8 py-6 shadow-xl">
+      <div className=" bg-blue-500 text-white px-8 py-6 shadow-xl">
         <div className="flex gap-2 items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -147,7 +147,7 @@ function DetailsCard(props) {
           <h3 className="text-xl font-medium tracking-wider">Security</h3>
         </div>
 
-        <div className="grid grid-cols-2 pt-2">
+        <div className="grid grid-cols-2 pt-3">
           {props.car.seguranca.map((item) => (
             <div key={item}>- {item}</div>
           ))}

@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import MainLayout from '../layouts/MainLayout'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { Link } from 'react-router-dom'
 
 function HomePage() {
   useEffect(() => {
@@ -21,9 +22,11 @@ function HomePage() {
               easy and reliable.
             </p>
             <div className="mt-8 flex gap-8 font-semibold pb-10 justify-center md:justify-start">
-              <button className="bg-blue-500 text-white py-3 px-8 hover:bg-blue-400 transition duration-750 hover:scale-125">
-                I WANT TO BUY
-              </button>
+              <Link to="/cars-list">
+                <button className="bg-blue-500 text-white py-3 px-8 hover:bg-blue-400 transition duration-750 hover:scale-125">
+                  I WANT TO BUY
+                </button>
+              </Link>
               <button className="bg-blue-100 transition duration-750 hover:scale-125 text-blue-500 py-3 px-8 hover:bg-blue-200 hover:text-blue-600">
                 I WANT TO SELL
               </button>

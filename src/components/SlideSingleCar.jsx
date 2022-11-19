@@ -7,7 +7,7 @@ function SlideSingleCar(props) {
     <Slide>
       {props.car.imagens.map((img, index) => (
         <div key={img}>
-          <img key={index} src={img} alt="" className="rounded-2xl" />
+          <img key={index} src={img} alt="" className="" />
         </div>
       ))}
     </Slide>
