@@ -18,6 +18,7 @@ function CarsListPage() {
             id={index + 1}
             fuel={car.combustivel}
             doors={car.portas}
+            slug={car.numerodechassi.toLowerCase()}
           />
           
         ))}

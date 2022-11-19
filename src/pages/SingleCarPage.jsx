@@ -7,8 +7,9 @@ import SlideSingleCar from '../components/SlideSingleCar'
 
 function SingleCarPage() {
   const params = useParams()
-  const id = params.slug
-  const car = data[id - 1]
+  const car = data.filter(
+    (car) => car.numerodechassi.toLowerCase() == params.slug.toLowerCase(),
+  )
 
   return (
     <MainLayout>
@@ -25,10 +26,10 @@ function SingleCarPage() {
             </button>
           </div>
           <div>
-            <SlideSingleCar car={car} />
+            <SlideSingleCar car={car[0]} />
           </div>
           <div>
-            <DetailsCard car={car} />
+            <DetailsCard car={car[0]} />
           </div>
         </div>
       </section>

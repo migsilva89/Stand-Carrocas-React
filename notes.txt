@@ -6,3 +6,4 @@
 - no border Radius when slide is working 
 - Submit form (COMPONENT WITH MESSAGE: message sent?!)
 - classes tailwind como props para reutilizar components; 
+- sempre que usar carrega do segundo carro para comparar aparece uma pagina com essa rota. 
