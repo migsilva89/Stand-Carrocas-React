@@ -1,6 +1,7 @@
 [
   {
     "marca": "Mercedes",
+    "numerodechassi": "Mercedes1",
     "imagemmarca": "https://www.carlogos.org/logo/Mercedes-Benz-logo-2011-1920x1080.png",
     "modelo": "Benz G 300 w463",
     "preco": 36500,
@@ -30,6 +31,7 @@
   },
   {
     "marca": "Mitsubishi",
+    "numerodechassi": "Mitsubishi1",
     "imagemmarca": "https://www.carlogos.org/logo/Mitsubishi-logo-2000x2500.png",
     "modelo": "Evolution VIII",
     "preco": 52500,
@@ -59,6 +61,7 @@
   },
   {
     "marca": "Ford",
+    "numerodechassi": "Ford1",
     "imagemmarca": "https://www.carlogos.org/car-logos/ford-logo-2017.png",
     "modelo": "MK2 2.5 Ultimate",
     "preco": 90000,
@@ -88,6 +91,7 @@
   },
   {
     "marca": "Renault",
+    "numerodechassi": "Renault1",
     "imagemmarca": "https://media.gettyimages.com/id/94938694/pt/foto/a-visitor-looks-at-a-lamborghini-gallardo-lp-560-4-spyder-automobile-at-volkswagen-ags-annual.jpg?s=612x612&w=0&k=20&c=leZvzt5jcA8S9W9tcZGxgsEdwVsWJH5CTU1EQpF9rMk=",
     "modelo": "Clio 1.8 16v",
     "preco": 14000,
