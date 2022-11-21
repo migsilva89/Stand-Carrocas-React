@@ -27,9 +27,11 @@ function HomePage() {
                   I WANT TO BUY
                 </button>
               </Link>
-              <button className="bg-blue-100 transition duration-750 hover:scale-125 text-blue-500 py-3 px-8 hover:bg-blue-200 hover:text-blue-600">
-                I WANT TO SELL
-              </button>
+              <Link to="/sell">
+                <button className="bg-blue-100 transition duration-750 hover:scale-125 text-blue-500 py-3 px-8 hover:bg-blue-200 hover:text-blue-600">
+                  I WANT TO SELL
+                </button>
+              </Link>
             </div>
           </div>
           <div className="relative w-5/12">

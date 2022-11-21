@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { pulse } from 'react-animations'
 import styled, { keyframes } from 'styled-components'
+import ToggleBtn from './ToggleBtn'
 
 const Pulse = styled.div`
   animation: 1s ${keyframes`${pulse}`} infinite;

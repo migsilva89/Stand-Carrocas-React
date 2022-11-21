@@ -6,6 +6,7 @@ import CarsListPage from './pages/CarsListPage'
 import ContactsPage from './pages/ContactsPage'
 import SingleCarPage from './pages/SingleCarPage'
 import BuyCarPage from './pages/BuyCarPage'
+import SellCarPage from './pages/SellCarPage'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/contacts" element={<ContactsPage />} />
         <Route path="/cars/:slug" element={<SingleCarPage />} />
         <Route path="/buy/:slug" element={<BuyCarPage />} />
+        <Route path="/sell" element={<SellCarPage/>}/>
       </Routes>
     </BrowserRouter>
   )

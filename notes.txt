@@ -9,3 +9,5 @@
 - sempre que usar carrega do segundo carro para comparar aparece uma pagina com essa rota. 
 - resolver PVP PADDING na details page 
 - fazer report de todas as funcionalidades design etc para documentacao; 
+- Verificar "''" ESLINT - VSCODE. 
+- APRENDER A USAR EVENTHANDLER REACT FORMS - 
