@@ -15,7 +15,7 @@ function SingleCarPage() {
     <MainLayout>
       <header className="relative bg-card-bg h-96 bg-cover bg-center">
         <div className="bg-blue-500 items-center h-full bg-opacity-10 px-8">
-          <div className="max-w-6xl mx-auto grid grid-cols-2 items-center h-full gap-10">
+          <div className="max-w-6xl mx-auto grid lg:grid-cols-2 items-center h-full gap-10">
             <div className="flex justify-center">
               <Link
                 to={`/buy/${car[0].numerodechassi}`}
@@ -33,8 +33,8 @@ function SingleCarPage() {
         </div>
       </header>
       <section className="py-12 bg-gradient-to-l from-sky-100">
-        <div className=" max-w-7xl grid grid-cols-2 pt-5 gap-12 mx-auto px-12">
-          <div>
+        <div className=" max-w-7xl grid lg:grid-cols-2 pt-5 gap-12 mx-auto px-12">
+          <div class='md:max-w-xl sm:max-w-sm  sm:w-full w-72 lg:max-w-none mx-auto lg:mx-0'>
             <SlideSingleCar car={car[0]} />
           </div>
           <div>
