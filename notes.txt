@@ -11,3 +11,4 @@
 - fazer report de todas as funcionalidades design etc para documentacao; 
 - Verificar "''" ESLINT - VSCODE. 
 - APRENDER A USAR EVENTHANDLER REACT FORMS - 
+- adicionar fuel e doors no details car component 

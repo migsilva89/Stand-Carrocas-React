@@ -13,7 +13,7 @@ function BuyForm(props) {
         <label className="text-blue-900 text-3xl font-bold">
           What's your offer ?
           <input
-            placeholder="Insert your offer in $"
+            placeholder={`Insert your offer - PVP $${offer}`}
             className="w-full px-4 font-normal leading-8 mt-2 py-2 text-sm border rounded-md focus:border-bluep-500 focus:outline-none focus:ring-1 focus:ring-bluep-500"
             type="number"
             onChange={(event) => setOffer(event.target.value)}

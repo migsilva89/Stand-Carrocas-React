@@ -1,20 +1,33 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 function ContactForm() {
+  const [inputs, setInputs] = useState({
+    name: '',
+    email: '',
+    message: '',
+  })
+
+ 
+
   return (
     <form className="px-10 space-y-7">
-      <h2 className="text-blue-900 text-3xl font-bold">Contact us</h2>
+      <label htmlFor="name" className="text-blue-900 text-3xl font-bold">
+        Contact us
+      </label>
       <div>
         <input
-          placeholder="Insert your name"
-          className="w-full px-4 leading-8  py-2 text-sm border rounded-md focus:border-bluep-500 focus:outline-none focus:ring-1 focus:ring-bluep-500"
           type="text"
+          name="name"
+          value={inputs.name}
+          onChange={handleChange}
+          placeholder="Insert your name"
+          className="w-full px-4 leading-8 py-2 text-sm border rounded-md focus:border-bluep-500 focus:outline-none focus:ring-1 focus:ring-bluep-500"
         />
       </div>
       <div>
         <input
           placeholder="Insert your email"
-          className="w-full px-4 leading-8  py-2 text-sm border rounded-md focus:border-bluep-500 focus:outline-none focus:ring-1 focus:ring-bluep-500"
+          className="w-full px-4 leading-8 py-2 text-sm border rounded-md focus:border-bluep-500 focus:outline-none focus:ring-1 focus:ring-bluep-500"
           type="email"
         />
       </div>

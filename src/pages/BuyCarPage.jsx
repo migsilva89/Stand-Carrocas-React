@@ -26,9 +26,9 @@ function BuyCarPage() {
         </div>
       </header>
       <section className="max-w-7xl px-12 mx-auto">
-        <div className="mt-12">
+        {/* <div className="mt-12">
           <DetailsCard car={car[0]} />
-        </div>
+        </div> */}
         <div className="mt-16 mb-12">
           <BuyForm price={car[0].preco} />
         </div>
