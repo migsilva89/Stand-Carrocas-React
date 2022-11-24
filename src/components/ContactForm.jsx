@@ -1,10 +1,13 @@
 import React, { useState } from 'react'
+
+//* We have used FORMIK and YUP to get form inout values and validation
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 import * as Yup from 'yup'
 
 function ContactForm() {
   const [isSubmited, setIsSubmited] = useState(false)
 
+  //* FORMIK SCHEMA and YUP VALIDATION for each
   const SignupSchema = Yup.object().shape({
     name: Yup.string()
       .min(2, 'Too Short!')
@@ -60,6 +63,9 @@ function ContactForm() {
           onSubmit={async (values) => {
             await new Promise((r) => setTimeout(r, 500))
             setIsSubmited(true)
+
+            //* Here we have our saved values with FORMIK.
+            console.log(values)
           }}
         >
           {({ errors, touched }) => (
@@ -84,11 +90,10 @@ function ContactForm() {
                 <Field
                   placeholder="Insert your email"
                   name="email"
-                  type="email"
                   className="w-full px-4 leading-8 py-2 text-sm border rounded-md focus:border-bluep-500 focus:outline-none focus:ring-1 focus:ring-bluep-500"
                 />
                 <div className="text-red-500 text-xs pt-2">
-                  <ErrorMessage className="text-red-500 text-xs pt-2" name="email" />
+                  <ErrorMessage name="email" />
                 </div>
               </div>
               <div>
@@ -96,10 +101,10 @@ function ContactForm() {
                   as="textarea"
                   name="message"
                   placeholder="Insert your message"
-                  className="w-full px-4 leading-8  py-2 text-sm border rounded-md focus:border-bluep-500 focus:outline-none focus:ring-1 focus:ring-bluep-500"
+                  className="w-full px-4 leading-8 py-2 text-sm border rounded-md focus:border-bluep-500 focus:outline-none focus:ring-1 focus:ring-bluep-500"
                 />
                 <div className="text-red-500 text-xs pt-2">
-                  <ErrorMessage className="text-red-500 text-xs pt-2" name="message" />
+                  <ErrorMessage name="message" />
                 </div>
               </div>
 

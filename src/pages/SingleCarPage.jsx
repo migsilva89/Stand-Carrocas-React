@@ -34,7 +34,7 @@ function SingleCarPage() {
       </header>
       <section className="py-12 bg-gradient-to-l from-sky-100">
         <div className=" max-w-7xl grid lg:grid-cols-2 pt-5 gap-12 mx-auto px-12">
-          <div class='md:max-w-xl sm:max-w-sm  sm:w-full w-72 lg:max-w-none mx-auto lg:mx-0'>
+          <div className='md:max-w-xl sm:max-w-sm  sm:w-full w-72 lg:max-w-none mx-auto lg:mx-0'>
             <SlideSingleCar car={car[0]} />
           </div>
           <div>
