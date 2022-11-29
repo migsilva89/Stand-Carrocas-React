@@ -25,16 +25,19 @@ function SingleCarPage() {
               </Link>
             </div>
             <div className="flex justify-center">
-              <button className="bg-blue-500   w-full font-bold text-2xl text-white py-3 px-8 hover:bg-blue-900 ">
+              <Link
+                to={`/testdrive/${car[0].numerodechassi}`}
+                className="bg-blue-500 text-center w-full font-bold text-2xl text-white py-3 px-8 hover:bg-blue-900 "
+              >
                 I WANT A TEST DRIVE
-              </button>
+              </Link>
             </div>
           </div>
         </div>
       </header>
       <section className="py-12 bg-gradient-to-l from-sky-100">
         <div className=" max-w-7xl grid lg:grid-cols-2 pt-5 gap-12 mx-auto px-12">
-          <div className='md:max-w-xl sm:max-w-sm  sm:w-full w-72 lg:max-w-none mx-auto lg:mx-0'>
+          <div className="md:max-w-xl sm:max-w-sm  sm:w-full w-72 lg:max-w-none mx-auto lg:mx-0">
             <SlideSingleCar car={car[0]} />
           </div>
           <div>

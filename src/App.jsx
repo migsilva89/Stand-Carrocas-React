@@ -7,6 +7,7 @@ import ContactsPage from './pages/ContactsPage'
 import SingleCarPage from './pages/SingleCarPage'
 import BuyCarPage from './pages/BuyCarPage'
 import SellCarPage from './pages/SellCarPage'
+import TestDrivePage from './pages/TestDrivePage'
 import { useEffect } from 'react'
 
 function ScrollToTop() {
@@ -32,6 +33,7 @@ function App() {
         <Route path="/cars/:slug" element={<SingleCarPage />} />
         <Route path="/buy/:slug" element={<BuyCarPage />} />
         <Route path="/sell" element={<SellCarPage />} />
+        <Route path="/testdrive/:slug" element={<TestDrivePage />} />
       </Routes>
     </BrowserRouter>
   )

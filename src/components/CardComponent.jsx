@@ -22,7 +22,7 @@ function CardComponent(props) {
             Compare
           </button>
         </div>
-        <div className="flex gap-5 text-gray-400 text-xs pt-3  tracking-wider">
+        <div className="flex gap-5 text-gray-400 text-xs pt-3 tracking-wider">
           <p>{props.fuel}</p>
           <img src="/dot.png" alt="" className="w-4 h-4" />
           <p>{props.doors} Doors</p>

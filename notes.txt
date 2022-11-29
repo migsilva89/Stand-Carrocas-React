@@ -1,14 +1,12 @@
-- favicon - DONE
-- ALEXANDRE: possivel receber imagem das marcas? 
-- analisar o marker da google maps API - DONE
 - Animations to all pages??
 - Simbol horse for car details 
-- no border Radius when slide is working 
-- ALEXANDRE Submit form (COMPONENT WITH MESSAGE: message sent?!)
-- classes tailwind como props para reutilizar components; 
+- classes tailwind como props para reutilizar; 
 - sempre que usar carrega do segundo carro para comparar aparece uma pagina com essa rota. 
-- resolver PVP PADDING na details page 
 - fazer report de todas as funcionalidades design etc para documentacao; 
-- Verificar "''" ESLINT - VSCODE. 
-- APRENDER A USAR EVENTHANDLER REACT FORMS - 
 - adicionar fuel e doors no details car component 
+
+
+compare::
+state no listpage 
+sempre que user carregar no segundo compare aparece uma modal, 
+sempre que fechar a modal o state compare volta a vazio 

@@ -20,7 +20,6 @@ function CarsListPage() {
             doors={car.portas}
             slug={car.numerodechassi.toLowerCase()}
           />
-          
         ))}
       </section>
     </MainLayout>
