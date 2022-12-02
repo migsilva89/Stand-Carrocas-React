@@ -27,8 +27,6 @@ function BuyForm(props) {
   const offer = props.price
   const [isSubmited, setIsSubmited] = useState(false)
 
-
-
   return (
     <Formik
       initialValues={{

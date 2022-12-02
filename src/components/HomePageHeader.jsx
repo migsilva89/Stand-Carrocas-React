@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -11,7 +11,7 @@ function HomePageHeader() {
   return (
     <header className="relative bg-gradient-to-t from-sky-50 ">
       <div className="md:flex justify-between max-w-7xl mx-auto">
-        <div className=" md:w-7/12 max-w-8xl px-12 md:text-left text-center">
+        <div className="md:w-7/12 max-w-8xl px-12 md:text-left text-center">
           <h1 className="text-blue-900 lg:text-7xl text-6xl font-medium lg:leading-snug md:max-w-xl md:mx-0 mx-auto">
             Easy and Fast Way To Buy & Sell a Car
           </h1>
