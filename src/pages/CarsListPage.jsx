@@ -3,6 +3,7 @@ import CardComponent from '../components/CardComponent'
 import DetailsCard from '../components/DetailsCard'
 import MainLayout from '../layouts/MainLayout'
 import data from '../data/data.json'
+import Modal from '../components/Modal'
 
 function CarsListPage() {
   const [carsToCompare, setCarsToCompare] = useState([])
@@ -20,19 +21,22 @@ function CarsListPage() {
     handleCompareModal()
   }, [carsToCompare])
 
-function getCarsToCompare(car1, car2){
-  let updatedCars = []
-  data.filter(car => {
-    if(car.numerodechassi.toLowerCase() === car1 || car.numerodechassi.toLowerCase() === car2){
-      updatedCars.push(car)
-    }
-  });
-  setFilteredCarsToCompare(updatedCars)
-}
+  function getCarsToCompare(car1, car2) {
+    let updatedCars = []
+    data.filter((car) => {
+      if (
+        car.numerodechassi.toLowerCase() === car1 ||
+        car.numerodechassi.toLowerCase() === car2
+      ) {
+        updatedCars.push(car)
+      }
+    })
+    setFilteredCarsToCompare(updatedCars)
+  }
 
   return (
     <MainLayout>
-      <section className="max-w-7xl mx-auto px-12 pb-10 grid grid-cols-4 gap-7">
+      <section className="max-w-7xl mx-auto px-12 pb-10 grid grid-cols-4 gap-7 relative">
         {data.map((car, index) => (
           <CardComponent
             key={index}
@@ -48,16 +52,19 @@ function getCarsToCompare(car1, car2){
             carsToCompare={carsToCompare}
           />
         ))}
+        {isReadyToCompare ? (
+          <div className="fixed w-full top-0 left-0 p-40">
+            <Modal
+              setCarsToCompare={setCarsToCompare}
+              setFilteredCarsToCompare={setFilteredCarsToCompare}
+              filteredCarsToCompare={filteredCarsToCompare}
+              setIsReadyToCompare={setIsReadyToCompare}
+            />
+          </div>
+        ) : (
+          ''
+        )}
       </section>
-      {isReadyToCompare ? (
-        <div>
-          {filteredCarsToCompare.map((car, index) => (
-            <DetailsCard key={index} car={car} />
-          ))} 
-        </div>
-      ) : (
-        ''
-      )}
     </MainLayout>
   )
 }

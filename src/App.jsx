@@ -12,6 +12,7 @@ import { useEffect } from 'react'
 
 function ScrollToTop() {
   //we use useLocation() to set the scroll to 0, 0 everytime the route pathname changes
+  //check for better solution
   const { pathname } = useLocation()
 
   useEffect(() => {
