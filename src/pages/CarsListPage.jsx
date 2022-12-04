@@ -53,7 +53,7 @@ function CarsListPage() {
           />
         ))}
         {isReadyToCompare ? (
-          <div className="fixed w-full top-0 left-0 p-40">
+          <div className="fixed w-full top-0 left-0 px-40 py-20">
             <Modal
               setCarsToCompare={setCarsToCompare}
               setFilteredCarsToCompare={setFilteredCarsToCompare}
