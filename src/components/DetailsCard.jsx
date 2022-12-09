@@ -5,11 +5,11 @@ function DetailsCard(props) {
     <ul className="space-y-12">
       <div className="flex items-center justify-between">
         <div className="text-blue-900">
-          <h1 className="text-5xl font-bold">{props.car.marca} </h1>
-          <p className="text-lg">{props.car.modelo}</p>
+          <h1 className="md:text-5xl text-2xl font-bold">{props.car.marca} </h1>
+          <p className="md:text-lg text-md">{props.car.modelo}</p>
         </div>
         <div>
-          <div className="bg-blue-100 text-2xl font-medium  text-blue-900 py-3 px-8">
+          <div className="bg-blue-100 md:text-2xl text-lg font-medium  text-blue-900 py-3 px-8">
             PVP €{props.car.preco}
           </div>
         </div>
@@ -130,7 +130,7 @@ function DetailsCard(props) {
           <h1>{props.car.corexterior}</h1>
         </li>
       </div>
-      <div className=" bg-blue-500 text-white px-8 py-6 shadow-xl">
+      {/* <div className=" bg-blue-500 text-white px-8 py-6 shadow-xl">
         <div className="flex gap-2 items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -152,7 +152,7 @@ function DetailsCard(props) {
             <div key={item}>- {item}</div>
           ))}
         </div>
-      </div>
+      </div> */}
     </ul>
   )
 }

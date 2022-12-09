@@ -49,7 +49,7 @@ function CarsListPage() {
 
   return (
     <MainLayout>
-      <div className="mx-12 mb-8">
+      <div className="mb-8 max-w-7xl mx-auto px-12">
         <input
           onChange={handleSearch}
           placeholder="Search for a car brand"

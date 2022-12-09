@@ -10,7 +10,7 @@ function SingleCarPage() {
   const car = data.filter(
     (car) => car.numerodechassi.toLowerCase() == params.slug.toLowerCase(),
   )
-
+  
   return (
     <MainLayout>
       <header className="relative bg-card-bg h-96 bg-cover bg-center">
