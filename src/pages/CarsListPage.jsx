@@ -60,7 +60,7 @@ function CarsListPage() {
       {renderedCars.length < 1 ? (
         <NoCarsFounded />
       ) : (
-        <section className="max-w-7xl mx-auto px-12 pb-10 grid grid-cols-4 gap-7 relative mb-auto">
+        <section className="max-w-7xl mx-auto px-12 pb-10 grid grid-cols-4 gap-7 relative">
           {renderedCars.map((car, index) => (
             <CardComponent
               key={index}
