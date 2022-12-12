@@ -13,7 +13,7 @@ function BuyCarPage() {
   return (
     <MainLayout>
       <header className="relative bg-card-bg-buy h-96 bg-cover bg-center">
-        <div className="bg-blue-500 h-full bg-opacity-25">
+        <div className="bg-blue-500 h-96 bg-opacity-25">
           <div className="flex justify-center items-center h-full">
             <div className="bg-white bg-opacity-80 p-10">
               <h1 className="text-center uppercase text-blue-500 text-6xl font-bold lg:leading-snug mx-auto">
@@ -26,7 +26,7 @@ function BuyCarPage() {
           </div>
         </div>
       </header>
-      <section className="max-w-7xl px-12 mx-auto">
+      <section className="max-w-7xl px-12 mx-auto w-full">
         <div className="mt-12 mb-12">
           <BuyForm price={car[0].preco} />
         </div>

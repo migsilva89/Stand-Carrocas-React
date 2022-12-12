@@ -2,7 +2,7 @@ import React from 'react'
 
 function Footer() {
   return (
-    <footer className="bg-sky-50 px-6 lg:px-0 ">
+    <footer className="bg-sky-50 px-6 lg:px-0">
       <div className="max-w-7xl mx-auto px-12 grid md:grid-cols-6 py-20  text-center md:text-start">
         <div className="md:col-span-2 pt-2 flex justify-center md:justify-start pb-8 md:pb-0">
           <img src="/fullLogo.png" alt="" className="w-46 h-20" />

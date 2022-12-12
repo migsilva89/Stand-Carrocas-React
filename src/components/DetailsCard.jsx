@@ -130,7 +130,7 @@ function DetailsCard(props) {
           <h1>{props.car.corexterior}</h1>
         </li>
       </div>
-      {/* <div className=" bg-blue-500 text-white px-8 py-6 shadow-xl">
+      <div className=" bg-blue-500 text-white px-8 py-6 shadow-xl">
         <div className="flex gap-2 items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -152,7 +152,8 @@ function DetailsCard(props) {
             <div key={item}>- {item}</div>
           ))}
         </div>
-      </div> */}
+      </div>
+      
     </ul>
   )
 }

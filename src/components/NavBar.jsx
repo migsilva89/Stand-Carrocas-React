@@ -8,11 +8,13 @@ const Pulse = styled.div`
 `
 function NavBar() {
   const [showNavBar, setShowNavBar] = useState(false)
+
   const toogleNavBar = () => {
     setShowNavBar(!showNavBar)
   }
+
   return (
-    <nav className="py-8 px-12 font-medium text-md  max-w-7xl mx-auto">
+    <nav className="py-8 font-medium text-md max-w-7xl mx-auto w-full px-12">
       <ul className="hidden text-gray-400 md:flex items-center justify-between">
         <li>
           <Link to="/">
@@ -40,14 +42,11 @@ function NavBar() {
         </Pulse>
       </ul>
       {/* <!-- HAMBURGUER BTN--> */}
-      <nav
-        onClick={toogleNavBar}
-        className="md:hidden flex justify-between items-center"
-      >
+      <nav className="md:hidden flex justify-between items-center">
         <div className="">
           <img src="/fullLogo.png" alt="" className="w-40" />
         </div>
-        <div className="space-y-2 cursor-pointer">
+        <div onClick={toogleNavBar} className="space-y-2 cursor-pointer">
           <div className="w-10 h-1 bg-gray-300 rounded-full"></div>
           <div className="w-10 h-1 bg-gray-300 rounded-full"></div>
           <div className="w-10 h-1 bg-gray-300 rounded-full"></div>
@@ -55,7 +54,6 @@ function NavBar() {
       </nav>
 
       {/* <!-- MOBILE HAMBURGUER MENU CONTENT --> */}
-
       {showNavBar ? (
         <div class="shadow-xl mx-auto py-10 rounded-lg bg-white absolute inset-x-0 z-10 w-3/4 md:w-2/5 mt-10">
           <ul class="grid gap-8 pt-1 text-blue-500 text-xl text-center font-bold">

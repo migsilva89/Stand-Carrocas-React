@@ -2,8 +2,9 @@ import React from 'react'
 import DetailsCard from './DetailsCard'
 
 function Modal(props) {
+  console.log(props.filteredCarsToCompare)
   return (
-    <div className="bg-white bg-opacity-95 px-20 pt-10">
+    <div className="bg-white bg-opacity-95 px-20 pt-10 ">
       <div className="flex justify-start">
         <button
           onClick={() => {

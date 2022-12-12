@@ -7,7 +7,7 @@ function HomePage() {
   return (
     <MainLayout>
       <HomePageHeader />
-      <section className="max-w-7xl mx-auto px-12 font-semibold pb-10">
+      <section className="max-w-7xl mx-auto px-12 font-semibold pb-10 mb-auto">
         <div className="flex justify-center m-8">
           <Link
             to="/cars-list"

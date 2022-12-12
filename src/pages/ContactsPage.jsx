@@ -14,9 +14,9 @@ function ContactsPage() {
   return (
     <MainLayout>
       <header className="relative bg-hero-contact h-96 bg-cover">
-        <div className="bg-blue-500 h-full bg-opacity-25"></div>
+        <div className="bg-blue-500 h-96 bg-opacity-25"></div>
       </header>
-      <section className="max-w-7xl mx-auto py-16 px-12 my-10 grid md:grid-cols-2">
+      <section className="max-w-7xl mx-auto py-16 px-12 my-10 grid md:grid-cols-2 w-full">
         <div className="flex justify-start mt-16">
           <Map></Map>
         </div>

@@ -5,7 +5,7 @@ function AboutPage() {
   return (
     <MainLayout>
       <header className="relative bg-hero-about h-96 bg-cover">
-        <div className="bg-blue-500 h-full bg-opacity-25"></div>
+        <div className="bg-blue-500 h-96 bg-opacity-25"></div>
       </header>
       <section className="lg:flex max-w-7xl mx-auto px-12 justify-around lg:py-36 py-12">
         <div className="lg:w-1/2 lg:text-left text-center">
