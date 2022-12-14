@@ -3,7 +3,7 @@ import DetailsCard from './DetailsCard'
 
 function Modal(props) {
   return (
-    <div className="bg-white bg-opacity-95 md:px-20 px-10 pt-10 ">
+    <div className="bg-white bg-opacity-95 md:px-20 px-12 pt-10 max-w-6xl mx-auto">
       <div className="flex justify-start">
         <button
           onClick={() => {

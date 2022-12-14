@@ -6,10 +6,11 @@ import TestDriveForm from '../components/TestDriveForm'
 
 function TestDrivePage() {
   const params = useParams()
+
   const car = data.filter(
     (car) => car.numerodechassi.toLowerCase() == params.slug.toLowerCase(),
   )
-  console.log(car)
+
   return (
     <MainLayout>
       <header className="relative bg-card-bg-test-drive h-96 bg-cover bg-center">

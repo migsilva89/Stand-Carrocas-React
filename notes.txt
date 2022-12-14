@@ -1,12 +1,20 @@
+Compare Feature::
+- state no listpage 
+- sempre que user carregar no segundo compare aparece uma modal, 
+- sempre que fechar a modal o state compare volta a vazio 
+
+TODO: 
+- tratar do responsive do model compare e fechar o modal ao carregar fora dele (mesmo com o car da nav bar fehcar ao carregar fora dele e adicionar buttao para fecha-lo )
+- tratar do responsive do brands slide - ver com bruno 
 - Animations to all pages??
-- Simbol horse for car details 
 - classes tailwind como props para reutilizar; 
-- sempre que usar carrega do segundo carro para comparar aparece uma pagina com essa rota. 
 - fazer report de todas as funcionalidades design etc para documentacao; 
 - adicionar fuel e doors no details car component 
+- cardetails page responsive 
+- buy car page responsive 
+- check test drive H1 size reposnsive 
+- fix footer content 
 
-
-compare::
-state no listpage 
-sempre que user carregar no segundo compare aparece uma modal, 
-sempre que fechar a modal o state compare volta a vazio 
+Questoo para Alex, nao preciso usar useContext e posso so passar o data que vem da api no meu app 
+e entao para que situacao especifica usar o estado global? 
+Para login vale apena useContext / localStorage???

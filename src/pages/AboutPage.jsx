@@ -9,7 +9,7 @@ function AboutPage() {
       </header>
       <section className="lg:flex max-w-7xl mx-auto px-12 justify-around lg:py-36 py-12">
         <div className="lg:w-1/2 lg:text-left text-center">
-          <h1 className="text-blue-900 text-7xl font-medium leading-snug">
+          <h1 className="text-blue-900 md:text-7xl text-5xl pb-4 font-medium leading-snug">
             How are we?
           </h1>
           <p className="text-gray-400 font-normal tracking-wide mt-2 lg:max-w-md">

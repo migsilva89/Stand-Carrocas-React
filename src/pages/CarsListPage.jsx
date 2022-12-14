@@ -60,7 +60,7 @@ function CarsListPage() {
       {renderedCars.length < 1 ? (
         <NoCarsFounded />
       ) : (
-        <section className="max-w-7xl mx-auto px-12 pb-10 grid grid-cols-4 gap-7 relative">
+        <section className="max-w-7xl mx-auto px-12 pb-10 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-7 gap-7 relative mb-auto">
           {renderedCars.map((car, index) => (
             <CardComponent
               key={index}
@@ -77,7 +77,7 @@ function CarsListPage() {
             />
           ))}
           {isReadyToCompare ? (
-            <div className="fixed w-full top-2 left-0 px-40 py-20 drop-shadow-2xl ">
+            <div className="fixed w-full top-2 left-0 lg:px-40 px-10 py-20 drop-shadow-2xl ">
               <Modal
                 setCarsToCompare={setCarsToCompare}
                 setFilteredCarsToCompare={setFilteredCarsToCompare}
