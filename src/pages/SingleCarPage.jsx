@@ -1,13 +1,12 @@
 import React from 'react'
 import { Link, useParams } from 'react-router-dom'
 import MainLayout from '../layouts/MainLayout'
-import data from '../data/data.json'
 import DetailsCard from '../components/DetailsCard'
 import SlideSingleCar from '../components/SlideSingleCar'
 
-function SingleCarPage() {
+function SingleCarPage(props) {
   const params = useParams()
-  const car = data.filter(
+  const car = props.data.filter(
     (car) => car.numerodechassi.toLowerCase() == params.slug.toLowerCase(),
   )
   

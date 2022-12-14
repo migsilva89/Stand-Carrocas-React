@@ -11,10 +11,7 @@ TODO:
 - fazer report de todas as funcionalidades design etc para documentacao; 
 - adicionar fuel e doors no details car component 
 - cardetails page responsive 
-- buy car page responsive 
 - check test drive H1 size reposnsive 
 - fix footer content 
+- mark compare btn as checked when value is in 
 
-Questoo para Alex, nao preciso usar useContext e posso so passar o data que vem da api no meu app 
-e entao para que situacao especifica usar o estado global? 
-Para login vale apena useContext / localStorage???

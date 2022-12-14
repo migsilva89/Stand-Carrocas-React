@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import MainLayout from '../layouts/MainLayout'
 import HomePageHeader from '../components/HomePageHeader'
-import data from '../data/data.json'
 import BrandsSlide from '../components/BrandsSlide'
 import CardComponent from '../components/CardComponent'
 import Modal from '../components/Modal'
 
-function HomePage() {
-  const lastFourAdded = data.slice(-4)
+function HomePage(props) {
+  const lastFourAdded = props.data.slice(-4)
   const [carsToCompare, setCarsToCompare] = useState([])
   const [isReadyToCompare, setIsReadyToCompare] = useState(false)
   const [filteredCarsToCompare, setFilteredCarsToCompare] = useState([])
@@ -25,7 +24,7 @@ function HomePage() {
 
   function getCarsToCompare(car1, car2) {
     let updatedCars = []
-    data.filter((car) => {
+    props.data.filter((car) => {
       if (
         car.numerodechassi.toLowerCase() === car1 ||
         car.numerodechassi.toLowerCase() === car2
@@ -66,12 +65,11 @@ function HomePage() {
           <span className="text-blue-500">|</span> Brands{' '}
           <span className="text-blue-500">|</span>
         </h1>
-
         {isReadyToCompare ? (
           ''
         ) : (
           <div className="max-w-7xl mx-auto w-full flex justify-center">
-            <BrandsSlide />
+            <BrandsSlide data={props.data}/>
           </div>
         )}
 

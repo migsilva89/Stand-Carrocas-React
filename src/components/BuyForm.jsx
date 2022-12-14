@@ -102,7 +102,7 @@ function BuyForm(props) {
               <h2 className="text-blue-900 text-3xl font-bold mb-4">
                 Would you like to pay in parts?
               </h2>
-              <div className="flex justify-between pt-4">
+              <div className="grid md:grid-cols-4 grid-cols-2 pt-4">
                 <div className="flex items-center mb-4">
                   <Field
                     type="radio"

@@ -8,7 +8,8 @@ import SingleCarPage from './pages/SingleCarPage'
 import BuyCarPage from './pages/BuyCarPage'
 import SellCarPage from './pages/SellCarPage'
 import TestDrivePage from './pages/TestDrivePage'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
+import axios from 'axios'
 
 function ScrollToTop() {
   //we use useLocation() to set the scroll to 0, 0 everytime the route pathname changes
@@ -23,18 +24,38 @@ function ScrollToTop() {
 }
 
 function App() {
+  const [data, setData] = useState([])
+  const sleep = async () => new Promise((resolve) => setTimeout(resolve, 1000))
+
+  const handleFactsApiRequest = async () => {
+    // setIsLoading(true)
+    const { data } = await axios({
+      method: 'GET',
+      url: 'https://6399fba316b0fdad77503d25.mockapi.io/Cars',
+    })
+    setData(data)
+    // await sleep()
+    // setIsLoading(false)
+  }
+
+  useEffect(() => {
+    handleFactsApiRequest()
+  }, [])
+
+ 
+
   return (
     <BrowserRouter>
       <ScrollToTop />
       <Routes>
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<HomePage data={data}/>} />
         <Route path="/about" element={<AboutPage />} />
-        <Route path="/cars-list" element={<CarsListPage />} />
+        <Route path="/cars-list" element={<CarsListPage data={data}/>} />
         <Route path="/contacts" element={<ContactsPage />} />
-        <Route path="/cars/:slug" element={<SingleCarPage />} />
-        <Route path="/buy/:slug" element={<BuyCarPage />} />
+        <Route path="/cars/:slug" element={<SingleCarPage data={data}/>} />
+        <Route path="/buy/:slug" element={<BuyCarPage data={data}/>} />
         <Route path="/sell" element={<SellCarPage />} />
-        <Route path="/testdrive/:slug" element={<TestDrivePage />} />
+        <Route path="/testdrive/:slug" element={<TestDrivePage data={data}/>} />
       </Routes>
     </BrowserRouter>
   )

@@ -1,13 +1,12 @@
 import React from 'react'
 import MainLayout from '../layouts/MainLayout'
 import { useParams } from 'react-router-dom'
-import data from '../data/data.json'
 import TestDriveForm from '../components/TestDriveForm'
 
-function TestDrivePage() {
+function TestDrivePage(props) {
   const params = useParams()
 
-  const car = data.filter(
+  const car = props.data.filter(
     (car) => car.numerodechassi.toLowerCase() == params.slug.toLowerCase(),
   )
 

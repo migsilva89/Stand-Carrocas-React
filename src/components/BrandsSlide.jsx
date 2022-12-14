@@ -5,10 +5,8 @@ import 'swiper/css'
 import 'swiper/css/effect-coverflow'
 import 'swiper/css/autoplay'
 import 'swiper/css/pagination'
-import data from '../data/data.json'
-// import { Link } from 'react-router-dom'
 
-function BrandsSlide() {
+function BrandsSlide(props) {
   return (
     <Swiper
       slidesPerView={4}
@@ -23,7 +21,7 @@ function BrandsSlide() {
       modules={[Pagination, Navigation, Autoplay]}
       className="mySwiper"
     >
-      {data.map((car, index) => (
+      {props.data.map((car, index) => (
         <SwiperSlide key={index}>
           {/* DEVO PASSAR O LINK */}
           {/* <Link to={`/cars/${car.numerodechassi}`}> */}

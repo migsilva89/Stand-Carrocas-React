@@ -2,10 +2,9 @@ import React, { useState, useEffect } from 'react'
 import CardComponent from '../components/CardComponent'
 import NoCarsFounded from '../components/NoCarsFounded'
 import MainLayout from '../layouts/MainLayout'
-import data from '../data/data.json'
 import Modal from '../components/Modal'
 
-function CarsListPage() {
+function CarsListPage(props) {
   const [carsToCompare, setCarsToCompare] = useState([])
   const [isReadyToCompare, setIsReadyToCompare] = useState(false)
   const [filteredCarsToCompare, setFilteredCarsToCompare] = useState([])
@@ -24,7 +23,7 @@ function CarsListPage() {
 
   function getCarsToCompare(car1, car2) {
     let updatedCars = []
-    data.filter((car) => {
+    props.data.filter((car) => {
       if (
         car.numerodechassi.toLowerCase() === car1 ||
         car.numerodechassi.toLowerCase() === car2
@@ -39,7 +38,7 @@ function CarsListPage() {
     setCarSearchValue(event.target.value)
   }
 
-  const renderedCars = data.filter((car) => {
+  const renderedCars = props.data.filter((car) => {
     if (car.marca === '') {
       return car
     } else if (car.marca.toLowerCase().includes(carSearchValue.toLowerCase())) {

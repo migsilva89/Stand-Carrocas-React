@@ -44,7 +44,9 @@ function NavBar() {
       {/* <!-- HAMBURGUER BTN--> */}
       <nav className="md:hidden flex justify-between items-center">
         <div className="">
-          <img src="/fullLogo.png" alt="" className="w-40" />
+          <Link to="/">
+            <img src="/fullLogo.png" alt="" className="w-40" />
+          </Link>
         </div>
         <div onClick={toogleNavBar} className="space-y-2 cursor-pointer">
           <div className="w-10 h-1 bg-gray-300 rounded-full"></div>
