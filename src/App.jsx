@@ -12,7 +12,7 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 
 function ScrollToTop() {
-  //we use useLocation() to set the scroll to 0, 0 everytime the route pathname changes
+  //we used useLocation() to set the scroll to 0, 0 everytime the route pathname changes
   //check for better solution
   const { pathname } = useLocation()
 
@@ -23,19 +23,16 @@ function ScrollToTop() {
   return null
 }
 
+// API REQUEST
 function App() {
   const [data, setData] = useState([])
-  const sleep = async () => new Promise((resolve) => setTimeout(resolve, 1000))
 
   const handleFactsApiRequest = async () => {
-    // setIsLoading(true)
     const { data } = await axios({
       method: 'GET',
       url: 'https://6399fba316b0fdad77503d25.mockapi.io/Cars',
     })
     setData(data)
-    // await sleep()
-    // setIsLoading(false)
   }
 
   useEffect(() => {
@@ -43,7 +40,6 @@ function App() {
   }, [])
 
  
-
   return (
     <BrowserRouter>
       <ScrollToTop />
