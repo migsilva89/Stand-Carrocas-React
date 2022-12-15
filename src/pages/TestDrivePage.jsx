@@ -2,6 +2,7 @@ import React from 'react'
 import MainLayout from '../layouts/MainLayout'
 import { useParams } from 'react-router-dom'
 import TestDriveForm from '../components/TestDriveForm'
+import Loading from '../components/Loading'
 
 function TestDrivePage(props) {
   const params = useParams()
@@ -19,9 +20,13 @@ function TestDrivePage(props) {
               <h1 className="text-center uppercase text-blue-500 text-6xl font-bold lg:leading-snug mx-auto">
                 Test drive
               </h1>
-              <h2 className="text-center uppercase text-blue-500 text-2xl font-bold lg:leading-snug mx-auto pt-4">
-                {car[0].marca} {car[0].modelo}
-              </h2>
+              {props.isLoading ? (
+                <Loading />
+              ) : (
+                <h2 className="text-center uppercase text-blue-500 text-2xl font-bold lg:leading-snug mx-auto pt-4">
+                  {car[0].marca} {car[0].modelo}
+                </h2>
+              )}
             </div>
           </div>
         </div>

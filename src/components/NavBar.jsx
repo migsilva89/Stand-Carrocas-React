@@ -9,6 +9,8 @@ const Pulse = styled.div`
 function NavBar() {
   const [showNavBar, setShowNavBar] = useState(false)
 
+  const genericHamburgerLine = `h-1 w-7 rounded-full bg-gray-600 transition ease transform duration-300`
+
   const toogleNavBar = () => {
     setShowNavBar(!showNavBar)
   }
@@ -49,9 +51,21 @@ function NavBar() {
           </Link>
         </div>
         <div onClick={toogleNavBar} className="space-y-2 cursor-pointer">
-          <div className="w-10 h-1 bg-gray-300 rounded-full"></div>
-          <div className="w-10 h-1 bg-gray-300 rounded-full"></div>
-          <div className="w-10 h-1 bg-gray-300 rounded-full"></div>
+          <div
+            className={`${genericHamburgerLine} ${
+              showNavBar ? 'rotate-45 translate-y-3 opacity-50' : 'opacity-50'
+            }`}
+          ></div>
+          <div
+            className={`${genericHamburgerLine} ${
+              showNavBar ? 'opacity-0' : 'opacity-50'
+            }`}
+          ></div>
+          <div
+            className={`${genericHamburgerLine} ${
+              showNavBar ? '-rotate-45 -translate-y-3 opacity-50' : 'opacity-50'
+            }`}
+          ></div>
         </div>
       </nav>
 

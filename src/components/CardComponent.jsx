@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 
 function CardComponent(props) {
   const handeCompareCars = () => {
-
     // validate if are not pressing the same car
     if (props.carsToCompare[0] === props.slug) {
       return

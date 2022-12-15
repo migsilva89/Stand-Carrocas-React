@@ -6,8 +6,8 @@ function MainLayout(props) {
   return (
     <main className="font-oswald h-screen flex flex-col">
       <NavBar />
-      {props.children}
-      <Footer/>
+        {props.children}
+      <Footer />
     </main>
   )
 }

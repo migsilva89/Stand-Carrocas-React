@@ -69,7 +69,7 @@ function HomePage(props) {
           ''
         ) : (
           <div className="max-w-7xl mx-auto w-full flex justify-center">
-            <BrandsSlide data={props.data}/>
+            <BrandsSlide data={props.data} />
           </div>
         )}
 

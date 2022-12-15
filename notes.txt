@@ -5,9 +5,7 @@ Compare Feature::
 
 TODO: 
 - tratar do responsive do model compare e fechar o modal ao carregar fora dele (mesmo com o car da nav bar fehcar ao carregar fora dele e adicionar buttao para fecha-lo )
-- tratar do responsive do brands slide - ver com bruno 
 - Animations to all pages??
-- classes tailwind como props para reutilizar; 
 - fazer report de todas as funcionalidades design etc para documentacao; 
 - adicionar fuel e doors no details car component 
 - cardetails page responsive 
@@ -15,3 +13,4 @@ TODO:
 - fix footer content 
 - mark compare btn as checked when value is in 
 
+overlay para fechar a modal 

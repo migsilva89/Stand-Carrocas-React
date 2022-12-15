@@ -9,8 +9,32 @@ import 'swiper/css/pagination'
 function BrandsSlide(props) {
   return (
     <Swiper
-      slidesPerView={4}
-      spaceBetween={30}
+      breakpoints={{
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        425: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+        1280: {
+          slidesPerView: 4,
+          spaceBetween: 25,
+        },
+      }}
       loop={true}
       loopFillGroupWithBlank={true}
       autoplay={{
@@ -25,7 +49,7 @@ function BrandsSlide(props) {
         <SwiperSlide key={index}>
           {/* DEVO PASSAR O LINK */}
           {/* <Link to={`/cars/${car.numerodechassi}`}> */}
-            <img src={car.imagemmarca} alt={car.marca} />
+          <img src={car.imagemmarca} alt={car.marca} />
           {/* </Link> */}
         </SwiperSlide>
       ))}

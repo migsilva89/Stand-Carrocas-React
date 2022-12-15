@@ -153,7 +153,6 @@ function DetailsCard(props) {
           ))}
         </div>
       </div>
-      
     </ul>
   )
 }
