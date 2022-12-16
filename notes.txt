@@ -14,3 +14,4 @@ TODO:
 - mark compare btn as checked when value is in 
 
 overlay para fechar a modal 
+checkout compare btn 

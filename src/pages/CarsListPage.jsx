@@ -3,6 +3,7 @@ import CardComponent from '../components/CardComponent'
 import NoCarsFounded from '../components/NoCarsFounded'
 import MainLayout from '../layouts/MainLayout'
 import Modal from '../components/Modal'
+import Loading from '../components/Loading'
 
 function CarsListPage(props) {
   const [carsToCompare, setCarsToCompare] = useState([])
@@ -56,38 +57,44 @@ function CarsListPage(props) {
           className="w-full h-8 p-4 py-6 text-blue-900 bg-gray-50 border border-blue-500 rounded-md"
         />
       </div>
-      {renderedCars.length < 1 ? (
-        <NoCarsFounded />
+      {props.isLoading ? (
+        <Loading />
       ) : (
-        <section className="max-w-7xl mx-auto px-12 pb-10 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-7 gap-7 relative mb-auto">
-          {renderedCars.map((car, index) => (
-            <CardComponent
-              key={index}
-              carName={car.marca}
-              carImgs={car.imagens}
-              year={car.anofabrico}
-              price={car.preco}
-              id={index + 1}
-              fuel={car.combustivel}
-              doors={car.portas}
-              slug={car.numerodechassi.toLowerCase()}
-              setCarsToCompare={setCarsToCompare}
-              carsToCompare={carsToCompare}
-            />
-          ))}
-          {isReadyToCompare ? (
-            <div className="fixed w-full top-2 left-0 lg:px-40 px-10 py-20 drop-shadow-2xl ">
-              <Modal
-                setCarsToCompare={setCarsToCompare}
-                setFilteredCarsToCompare={setFilteredCarsToCompare}
-                filteredCarsToCompare={filteredCarsToCompare}
-                setIsReadyToCompare={setIsReadyToCompare}
-              />
-            </div>
+        <div>
+          {renderedCars.length < 1 ? (
+            <NoCarsFounded />
           ) : (
-            ''
+            <section className="max-w-7xl mx-auto px-12 pb-10 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-7 gap-7 relative mb-auto">
+              {renderedCars.map((car, index) => (
+                <CardComponent
+                  key={index}
+                  carName={car.marca}
+                  carImgs={car.imagens}
+                  year={car.anofabrico}
+                  price={car.preco}
+                  id={index + 1}
+                  fuel={car.combustivel}
+                  doors={car.portas}
+                  slug={car.numerodechassi.toLowerCase()}
+                  setCarsToCompare={setCarsToCompare}
+                  carsToCompare={carsToCompare}
+                />
+              ))}
+              {isReadyToCompare ? (
+                <div className="fixed w-full top-2 left-0 lg:px-40 px-10 py-20 drop-shadow-2xl ">
+                  <Modal
+                    setCarsToCompare={setCarsToCompare}
+                    setFilteredCarsToCompare={setFilteredCarsToCompare}
+                    filteredCarsToCompare={filteredCarsToCompare}
+                    setIsReadyToCompare={setIsReadyToCompare}
+                  />
+                </div>
+              ) : (
+                ''
+              )}
+            </section>
           )}
-        </section>
+        </div>
       )}
     </MainLayout>
   )
