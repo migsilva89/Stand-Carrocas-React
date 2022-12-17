@@ -15,9 +15,7 @@ function SingleCarPage(props) {
     <MainLayout>
       <header className="relative bg-card-bg h-96 bg-cover bg-center">
         <div className="bg-blue-500 items-center h-96 bg-opacity-10 px-8">
-          {props.isLoading ? (
-            ''
-          ) : (
+          {!props.isLoading && (
             <div className="max-w-6xl mx-auto grid lg:grid-cols-2 items-center h-full gap-10">
               <div className="flex justify-center">
                 <Link

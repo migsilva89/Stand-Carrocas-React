@@ -70,9 +70,9 @@ function NavBar() {
       </nav>
 
       {/* <!-- MOBILE HAMBURGUER MENU CONTENT --> */}
-      {showNavBar ? (
-        <div class="shadow-xl mx-auto py-10 rounded-lg bg-white absolute inset-x-0 z-10 w-3/4 md:w-2/5 mt-10">
-          <ul class="grid gap-8 pt-1 text-blue-500 text-xl text-center font-bold">
+      {showNavBar && (
+        <div className="shadow-xl mx-auto py-10 rounded-lg bg-white absolute inset-x-0 z-10 w-3/4 md:w-2/5 mt-10">
+          <ul className="grid gap-8 pt-1 text-blue-500 text-xl text-center font-bold">
             <li className="hover:text-gray-600 shadow-[0_0px_0_rgb(0,0,0)] hover:shadow-[0_4px_0px_rgb(30,144,255)] ease-out hover:translate-y-1 transition-all rounded w-14 mx-auto">
               <Link to="/">Home</Link>
             </li>
@@ -94,8 +94,6 @@ function NavBar() {
             </div>
           </ul>
         </div>
-      ) : (
-        ''
       )}
     </nav>
   )

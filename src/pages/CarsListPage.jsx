@@ -4,6 +4,7 @@ import NoCarsFounded from '../components/NoCarsFounded'
 import MainLayout from '../layouts/MainLayout'
 import Modal from '../components/Modal'
 import Loading from '../components/Loading'
+import CarsToCompareComp from '../components/CarsToCompareComp'
 
 function CarsListPage(props) {
   const [carsToCompare, setCarsToCompare] = useState([])
@@ -56,6 +57,7 @@ function CarsListPage(props) {
           type="text"
           className="w-full h-8 p-4 py-6 text-blue-900 bg-gray-50 border border-blue-500 rounded-md"
         />
+      <CarsToCompareComp carsToCompare={carsToCompare}/>
       </div>
       {props.isLoading ? (
         <Loading />
@@ -64,7 +66,7 @@ function CarsListPage(props) {
           {renderedCars.length < 1 ? (
             <NoCarsFounded />
           ) : (
-            <section className="max-w-7xl mx-auto px-12 pb-10 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-7 gap-7 relative mb-auto">
+            <section className="max-w-7xl mx-auto px-12 pb-10 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 gap-7 relative mb-auto">
               {renderedCars.map((car, index) => (
                 <CardComponent
                   key={index}
@@ -80,18 +82,29 @@ function CarsListPage(props) {
                   carsToCompare={carsToCompare}
                 />
               ))}
-              {isReadyToCompare ? (
-                <div className="fixed w-full top-2 left-0 lg:px-40 px-10 py-20 drop-shadow-2xl ">
-                  <Modal
-                    setCarsToCompare={setCarsToCompare}
-                    setFilteredCarsToCompare={setFilteredCarsToCompare}
-                    filteredCarsToCompare={filteredCarsToCompare}
-                    setIsReadyToCompare={setIsReadyToCompare}
-                  />
-                </div>
-              ) : (
-                ''
-              )}
+               {isReadyToCompare && (
+        <div
+          onClick={() => {
+            setFilteredCarsToCompare([])
+            setIsReadyToCompare(false)
+            setCarsToCompare([])
+          }}
+          className="fixed w-full h-full top-0 left-0 lg:px-40 px-10 py-20 drop-shadow-2xl bg-black bg-opacity-50"
+        >
+          <div
+            onClick={(event) => {
+              event.stopPropagation()
+            }}
+          >
+            <Modal
+              setCarsToCompare={setCarsToCompare}
+              setFilteredCarsToCompare={setFilteredCarsToCompare}
+              filteredCarsToCompare={filteredCarsToCompare}
+              setIsReadyToCompare={setIsReadyToCompare}
+            />
+          </div>
+        </div>
+      )}
             </section>
           )}
         </div>

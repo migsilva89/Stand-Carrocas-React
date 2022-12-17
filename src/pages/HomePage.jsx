@@ -70,27 +70,35 @@ function HomePage(props) {
             <span className="text-blue-500">|</span> Brands{' '}
             <span className="text-blue-500">|</span>
           </h1>
-          {isReadyToCompare ? (
-            ''
-          ) : (
+          {!isReadyToCompare && (
             <div className="max-w-7xl mx-auto w-full flex justify-center">
               <BrandsSlide data={props.data} />
             </div>
           )}
-
-          {isReadyToCompare ? (
-            <div className="fixed w-full top-2 left-0 lg:px-40 px-10 py-20 drop-shadow-2xl">
-              <Modal
-                setCarsToCompare={setCarsToCompare}
-                setFilteredCarsToCompare={setFilteredCarsToCompare}
-                filteredCarsToCompare={filteredCarsToCompare}
-                setIsReadyToCompare={setIsReadyToCompare}
-              />
-            </div>
-          ) : (
-            ''
-          )}
         </section>
+      )}
+      {isReadyToCompare && (
+        <div
+          onClick={() => {
+            setFilteredCarsToCompare([])
+            setIsReadyToCompare(false)
+            setCarsToCompare([])
+          }}
+          className="fixed w-full h-full top-0 left-0 lg:px-40 px-10 py-20 drop-shadow-2xl bg-black bg-opacity-50"
+        >
+          <div
+            onClick={(event) => {
+              event.stopPropagation()
+            }}
+          >
+            <Modal
+              setCarsToCompare={setCarsToCompare}
+              setFilteredCarsToCompare={setFilteredCarsToCompare}
+              filteredCarsToCompare={filteredCarsToCompare}
+              setIsReadyToCompare={setIsReadyToCompare}
+            />
+          </div>
+        </div>
       )}
     </MainLayout>
   )
