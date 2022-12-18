@@ -3,7 +3,7 @@ import DetailsCard from './DetailsCard'
 
 function Modal(props) {
   return (
-    <div className="bg-white bg-opacity-95 md:px-20 px-12 pt-10 max-w-6xl mx-auto">
+    <div className="bg-white bg-opacity-95 md:px-20 px-8 pt-10 max-w-7xl">
       <div className="flex justify-start">
         <button
           onClick={() => {
@@ -11,7 +11,7 @@ function Modal(props) {
             props.setIsReadyToCompare(false)
             props.setCarsToCompare([])
           }}
-          className="bg-blue-500 text-white p-2 mb-8"
+          className="bg-blue-500 text-white p-2 mb-8 text-sm md:text-lg"
         >
           Back to List
         </button>

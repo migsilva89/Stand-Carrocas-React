@@ -17,13 +17,13 @@ function TestDrivePage(props) {
         <div className="bg-blue-500 h-96 bg-opacity-25">
           <div className="flex justify-center items-center h-full">
             <div className="bg-white bg-opacity-80 p-10">
-              <h1 className="text-center uppercase text-blue-500 text-6xl font-bold lg:leading-snug mx-auto">
+              <h1 className="text-center uppercase text-blue-500 md:text-6xl text-4xl font-bold lg:leading-snug mx-auto">
                 Test drive
               </h1>
               {props.isLoading ? (
                 <Loading />
               ) : (
-                <h2 className="text-center uppercase text-blue-500 text-2xl font-bold lg:leading-snug mx-auto pt-4">
+                <h2 className="text-center uppercase text-blue-500 md:text-2xl text-xl font-bold lg:leading-snug mx-auto pt-4">
                   {car[0].marca} {car[0].modelo}
                 </h2>
               )}

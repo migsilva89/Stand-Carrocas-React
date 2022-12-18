@@ -4,14 +4,8 @@ Compare Feature::
 - sempre que fechar a modal o state compare volta a vazio 
 
 TODO: 
-- tratar do responsive do model compare e fechar o modal ao carregar fora dele (mesmo com o car da nav bar fehcar ao carregar fora dele e adicionar buttao para fecha-lo )
 - Animations to all pages??
 - fazer report de todas as funcionalidades design etc para documentacao; 
 - adicionar fuel e doors no details car component 
-- cardetails page responsive 
-- check test drive H1 size reposnsive 
-- fix footer content 
-- mark compare btn as checked when value is in 
 
-overlay para fechar a modal 
-checkout compare btn 
+modal overlay quando em ecra grande nao se fecha

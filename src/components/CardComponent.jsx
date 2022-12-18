@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 function CardComponent(props) {
+  
   const handeCompareCars = () => {
     // validate if are not pressing the same car
     if (props.carsToCompare[0] === props.slug) {
@@ -45,7 +46,7 @@ function CardComponent(props) {
             € {props.price}
           </h3>
           <Link to={`/cars/${props.slug}`}>
-            <button className="bg-blue-500 hover:scale-125 transition duration-750 text-white py-2 px-6 hover:bg-blue-400 cursor-pointer">
+            <button className="bg-blue-500 text-xs hover:scale-125 transition duration-750 text-white py-2 px-6 hover:bg-blue-400 cursor-pointer">
               Details
             </button>
           </Link>

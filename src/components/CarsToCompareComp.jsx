@@ -2,7 +2,7 @@ import React from 'react'
 
 function CarsToCompareComp(props) {
   return (
-    <div className="flex justify-center mt-6 pt-2 pb-4 rounded-md bg-sky-100 text-blue-500">
+    <div className="flex justify-center my-8 pt-2 pb-4 rounded-md bg-sky-100 text-blue-500">
       {props.carsToCompare.length > 0 && (
         <p>
           Currently car selected to compare is

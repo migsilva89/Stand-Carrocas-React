@@ -5,16 +5,16 @@ function DetailsCard(props) {
     <ul className="space-y-12">
       <div className="flex items-center justify-between">
         <div className="text-blue-900">
-          <h1 className="md:text-5xl text-2xl font-bold">{props.car.marca} </h1>
-          <p className="md:text-lg text-md">{props.car.modelo}</p>
+          <h1 className="md:text-5xl sm:text-2xl font-bold">{props.car.marca} </h1>
+          <p className="md:text-lg sm:text-md text-xs">{props.car.modelo}</p>
         </div>
         <div>
-          <div className="bg-blue-100 md:text-2xl text-lg font-medium  text-blue-900 py-3 px-8">
+          <div className="bg-blue-100 md:text-2xl sm:text-lg font-medium  text-blue-900 py-3 px-8">
             PVP €{props.car.preco}
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-2 items-center pt-4 text-blue-600 font-medium">
+      <div className="grid grid-cols-2 items-center pt-4 text-blue-600 font-medium text-sm md:text-lg">
         <li className="flex gap-5 pb-2">
           <div>
             <svg
@@ -32,7 +32,7 @@ function DetailsCard(props) {
               />
             </svg>
           </div>
-          <h3>{props.car.anofabrico}</h3>
+          <h3 className=''>{props.car.anofabrico}</h3>
         </li>
         <li className="flex gap-5 pb-2">
           <div>
@@ -147,7 +147,7 @@ function DetailsCard(props) {
           <h3 className="text-xl font-medium tracking-wider">Security</h3>
         </div>
 
-        <div className="grid grid-cols-2 pt-3">
+        <div className="grid md:grid-cols-2 pt-3 text-sm md:text-lg">
           {props.car.seguranca.map((item) => (
             <div key={item}>- {item}</div>
           ))}

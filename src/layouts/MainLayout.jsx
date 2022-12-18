@@ -4,7 +4,7 @@ import Footer from '../components/Footer'
 
 function MainLayout(props) {
   return (
-    <main className="font-oswald h-screen flex flex-col">
+    <main className="font-oswald h-screen flex flex-col relative">
       <NavBar />
         {props.children}
       <Footer />

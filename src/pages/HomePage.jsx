@@ -5,6 +5,7 @@ import BrandsSlide from '../components/BrandsSlide'
 import CardComponent from '../components/CardComponent'
 import Modal from '../components/Modal'
 import Loading from '../components/Loading'
+import CarsToCompareComp from '../components/CarsToCompareComp'
 
 function HomePage(props) {
   const lastFourAdded = props.data.slice(-4)
@@ -43,11 +44,11 @@ function HomePage(props) {
         <Loading />
       ) : (
         <section className="max-w-7xl mx-auto font-semibold py-10 mb-auto w-full px-12">
-          <h1 className="text-blue-900 md:text-5xl text-4xl text-center pb-10 font-medium lg:leading-snug">
+          <h1 className="text-blue-900 md:text-5xl text-4xl text-center font-medium lg:leading-snug">
             <span className="text-blue-500">|</span> Latest added{' '}
             <span className="text-blue-500">|</span>
           </h1>
-
+          <CarsToCompareComp carsToCompare={carsToCompare} />
           <section className="grid lg:grid-cols-4 md:grid-cols-2 gap-7">
             {lastFourAdded.map((car, index) => (
               <CardComponent
@@ -84,19 +85,22 @@ function HomePage(props) {
             setIsReadyToCompare(false)
             setCarsToCompare([])
           }}
-          className="fixed w-full h-full top-0 left-0 lg:px-40 px-10 py-20 drop-shadow-2xl bg-black bg-opacity-50"
+          className="overflow-scroll fixed w-full h-full lg:px-40 px-10 py-20 drop-shadow-2xl bg-black bg-opacity-75"
         >
           <div
             onClick={(event) => {
               event.stopPropagation()
             }}
+            className="mx-auto max-w-7xl"
           >
-            <Modal
-              setCarsToCompare={setCarsToCompare}
-              setFilteredCarsToCompare={setFilteredCarsToCompare}
-              filteredCarsToCompare={filteredCarsToCompare}
-              setIsReadyToCompare={setIsReadyToCompare}
-            />
+            <div className="">
+              <Modal
+                setCarsToCompare={setCarsToCompare}
+                setFilteredCarsToCompare={setFilteredCarsToCompare}
+                filteredCarsToCompare={filteredCarsToCompare}
+                setIsReadyToCompare={setIsReadyToCompare}
+              />
+            </div>
           </div>
         </div>
       )}

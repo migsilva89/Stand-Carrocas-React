@@ -42,7 +42,7 @@ function SingleCarPage(props) {
           <Loading />
         ) : (
           <div className=" max-w-7xl grid lg:grid-cols-2 pt-5 gap-12 mx-auto px-12">
-            <div className="md:max-w-xl sm:max-w-sm  sm:w-full w-72 lg:max-w-none mx-auto lg:mx-0">
+            <div className="md:max-w-xl sm:max-w-sm md:mt-3 sm:w-full w-72 lg:max-w-none mx-auto lg:mx-0">
               <SlideSingleCar car={car[0]} />
             </div>
             <div>
