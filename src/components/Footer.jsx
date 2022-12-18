@@ -1,117 +1,65 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 function Footer() {
   return (
     <footer className="bg-sky-50 px-6 lg:px-0">
-      <div className="max-w-7xl mx-auto px-12 grid md:grid-cols-6 py-20  text-center md:text-start">
-        <div className="md:col-span-2 pt-2 flex justify-center md:justify-start pb-8 md:pb-0">
+      <div className="max-w-7xl mx-auto px-12 grid md:grid-cols-5 py-20 text-center md:text-start">
+        <Link
+        to="/"
+        className="md:col-span-2 pt-2 flex justify-center md:justify-start pb-8 md:pb-0">
           <img src="/fullLogo.png" alt="" className="w-46 h-20" />
-        </div>
+        </Link>
         <div>
           <h4 className="font-bold pb-5 text-blue-500 text-lg">Features</h4>
-          <div className="text-grayy text-sm">
+          <div className="text-grayy text-sm pb-5 md:pb-0">
             <p>
-              <a
+              <Link
+                to="/cars-list"
                 href="#"
-                aria-label="Link Shortening"
+                aria-label="Buy Car"
                 className="hover:text-blue-500 text-gray-400"
               >
-                Link Shortening
-              </a>
+                Buy Car
+              </Link>
             </p>
             <p>
-              <a
+              <Link
+                to="/sell"
                 href="#"
-                aria-label="Branded Links"
+                aria-label="Sell Car"
                 className="hover:text-blue-500 text-gray-400"
               >
-                Branded Links
-              </a>
-            </p>
-            <p>
-              <a
-                href="#"
-                aria-label="Analytics"
-                className="hover:text-blue-500 text-gray-400"
-              >
-                Analytics
-              </a>
+                Sell Car
+              </Link>
             </p>
           </div>
         </div>
         <div>
-          <h4 className="font-bold pb-5 text-blue-500 text-lg">Resources</h4>
+          <h4 className="font-bold pb-5 text-blue-500 text-lg">Info</h4>
           <div className="text-grayy text-sm">
             <p>
-              <a
+              <Link
+                to="/contacts"
                 href="#"
-                aria-label="Blog"
+                aria-label="Contacts"
                 className="hover:text-blue-500 text-gray-400"
               >
-                Blog
-              </a>
+                Contacts
+              </Link>
             </p>
             <p>
-              <a
+              <Link
+                to="/about"
                 href="#"
-                aria-label="Developers"
+                aria-label="About Us"
                 className="hover:text-blue-500 text-gray-400"
               >
-                Developers
-              </a>
-            </p>
-            <p>
-              <a
-                href="#"
-                aria-label="Support"
-                className="hover:text-blue-500 text-gray-400"
-              >
-                Support
-              </a>
+                About Us
+              </Link>
             </p>
           </div>
         </div>
-        <div>
-          <h4 className="font-bold pb-5 text-blue-500 text-lg">Company</h4>
-          <div className="text-grayy text-sm">
-            <p>
-              <a
-                href="#"
-                aria-label="About"
-                className="hover:text-blue-500 text-gray-400"
-              >
-                About
-              </a>
-            </p>
-            <p>
-              <a
-                href="#"
-                aria-label="Our Team"
-                className="hover:text-blue-500 text-gray-400"
-              >
-                Our Team
-              </a>
-            </p>
-            <p>
-              <a
-                href="#"
-                aria-label="Careers"
-                className="hover:text-blue-500 text-gray-400"
-              >
-                Careers
-              </a>
-            </p>
-            <p>
-              <a
-                href="#"
-                aria-label="Contact"
-                className="hover:text-blue-500 text-gray-400"
-              >
-                Contact
-              </a>
-            </p>
-          </div>
-        </div>
+
         <div className="pt-2">
           <div className="flex md:justify-between justify-center gap-5 md:gap-0 mt-8 md:mt-0">
             <a href="#" aria-label="links">
