@@ -1,4 +1,4 @@
-# CarStore - ReactJS && TailwindCSS
+# CarStore - React & Tailwind
 
 ### Stand Carrocinha is my final project for Flag.pt front-end module. 
 
