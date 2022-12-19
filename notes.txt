@@ -1,4 +1,0 @@
-TODO: 
-- Animations to all pages??
-- fazer report de todas as funcionalidades design etc para documentacao; 
-- adicionar fuel e doors no details car component 

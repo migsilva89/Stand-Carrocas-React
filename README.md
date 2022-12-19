@@ -17,7 +17,7 @@
 ## Installation
 
 ```bash
-git clone https://github.com/migsilva89/Stand-Carrocas-app
+git clone https://github.com/migsilva89/Stand-Carrocas-React
 ```
 
 ```bash
