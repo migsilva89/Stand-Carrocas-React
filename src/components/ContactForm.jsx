@@ -23,7 +23,7 @@ function ContactForm() {
   return (
     <div>
       {isSubmited ? (
-        <div className="md:px-10 space-y-7 pt-16">
+        <div className="md:px-10 space-y-7 md:pt-16">
           <div>
             <div className="flex gap-5 items-center h-full">
               <h2 className="text-blue-900 text-3xl font-bold">

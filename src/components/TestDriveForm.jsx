@@ -47,7 +47,7 @@ export default function TestDriveForm() {
         <div className="md:px-10 space-y-7">
           <div>
             <div className="flex gap-5 items-center h-full justify-center">
-              <h2 className="text-blue-900 text-3xl font-bold">
+              <h2 className="text-blue-900 text-3xl font-bold text-center">
                 Your request for a test drive was sent.
               </h2>
               <svg

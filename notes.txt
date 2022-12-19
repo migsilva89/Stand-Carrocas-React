@@ -1,8 +1,3 @@
-Compare Feature::
-- state no listpage 
-- sempre que user carregar no segundo compare aparece uma modal, 
-- sempre que fechar a modal o state compare volta a vazio 
-
 TODO: 
 - Animations to all pages??
 - fazer report de todas as funcionalidades design etc para documentacao; 

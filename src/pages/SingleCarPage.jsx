@@ -1,5 +1,5 @@
-import React, { Suspense } from 'react'
-import { Link, useParams, Navigate } from 'react-router-dom'
+import React from 'react'
+import { Link, useParams} from 'react-router-dom'
 import MainLayout from '../layouts/MainLayout'
 import DetailsCard from '../components/DetailsCard'
 import SlideSingleCar from '../components/SlideSingleCar'

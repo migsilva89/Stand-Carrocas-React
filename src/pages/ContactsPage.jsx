@@ -1,6 +1,5 @@
 import React from 'react'
 import MainLayout from '../layouts/MainLayout'
-
 import Map from '../components/Map'
 import ContactForm from '../components/ContactForm'
 
