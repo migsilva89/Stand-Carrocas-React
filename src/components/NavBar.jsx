@@ -82,7 +82,7 @@ function NavBar() {
             <li className="hover:text-gray-600 shadow-[0_0px_0_rgb(0,0,0)] hover:shadow-[0_4px_0px_rgb(30,144,255)] ease-out hover:translate-y-1 transition-all rounded w-18 mx-auto">
               <Link to="/contacts">Contacts</Link>
             </li>
-            <div class="flex justify-center my-4">
+            <div className="flex justify-center my-4">
               <Pulse>
                 <Link
                   to="/cars-list"
